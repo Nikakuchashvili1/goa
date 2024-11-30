@@ -1,0 +1,36 @@
+<!-- შექმენით ორი დივ ელემენტი პირველს არ მიუთითოთ პოზიცია მეორე ელემენტს მიოუთითეთ relative შემდდეგ გადაადდგილეთ ეს დივი -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning Example</title>
+    <style>
+        .first-div {
+            width: 200px;
+            height: 100px;
+            background-color: rgb(177, 173, 230);
+            margin-bottom: 20px;
+        }
+        
+        .second-div {
+            width: 200px;
+            height: 100px;
+            background-color: rgb(160, 240, 128);
+            position: relative;
+            top: 50px;  
+            left: 30px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="first-div">
+        First div
+    </div>
+    
+    <div class="second-div">
+        Second div 
+    </div>
+</body>
+</html>

@@ -1,0 +1,144 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+.main-container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f2f5;
+}
+
+
+.left-section {
+    background-color: #ffffff;
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.left-section h1 {
+    color: #1877f2;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.left-section p {
+    color: #1d2129;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.right-section {
+    background-color: #ffffff;
+    flex: 1;
+    max-width: 400px;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.signup-container h2 {
+    color: #1d2129;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #dddfe2;
+    border-radius: 5px;
+}
+
+.date-of-birth select {
+    width: 32%;
+    display: inline-block;
+    margin-right: 3%;
+}
+
+.date-of-birth select:last-child {
+    margin-right: 0;
+}
+
+
+.gender {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.gender label {
+    font-size: 14px;
+}
+
+
+.signup-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.signup-button:hover {
+    background-color: #166fe5;
+}
+
+
+.terms {
+    font-size: 12px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.terms a {
+    color: #1877f2;
+    text-decoration: none;
+}
+
+
+.login-link {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.login-link a {
+    color: #1877f2;
+    text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .left-section {
+        padding: 20px;
+    }
+
+    .right-section {
+        padding: 20px;
+        margin-top: 20px;
+    }
+}

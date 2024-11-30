@@ -1,0 +1,37 @@
+<!-- გაქვთ ბლოკი ზომით 300px და 200px. საჭიროა მისი განთავსება გვერდის ცენტრში როგორც ჰორიზონტალურად, ისე ვერტიკალურად. გამოიყენეთ position და სხვა შესაბამისი CSS-ის თვისებები. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centering Block</title>
+    <style>
+    
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .centered-block {
+            width: 300px;
+            height: 200px;
+            background-color: #4CAF50;
+            position: absolute; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="centered-block">
+        Centered Block
+    </div>
+
+</body>
+</html>
